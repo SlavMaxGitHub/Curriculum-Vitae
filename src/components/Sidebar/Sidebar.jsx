@@ -51,11 +51,21 @@ const Sidebar = (props) => {
           </li>
         </ul>
         {state ? (
-          <a href="#" className="pdfBtn">
+          <a
+            href="https://drive.google.com/file/d/19yO8vm93CKfsyLmiFH39rxw5-mt-iGEA/view?usp=share_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pdfBtn"
+          >
             Download CV in PDF
           </a>
         ) : (
-          <a href="#" className="pdfBtn">
+          <a
+            href="https://drive.google.com/file/d/17S2nuurstH_-njhTCgnm1nDtbSUUcRtO/view?usp=share_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pdfBtn"
+          >
             Pobierz CV w PDF
           </a>
         )}
