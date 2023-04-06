@@ -50,11 +50,20 @@ const Sidebar = (props) => {
             </a>
           </li>
         </ul>
+        {state ? (
+          <a href="#" className="pdfBtn">
+            Download CV in PDF
+          </a>
+        ) : (
+          <a href="#" className="pdfBtn">
+            Pobierz CV w PDF
+          </a>
+        )}
       </div>
 
       <div className="sidebar__skills sidebar-div">
         <h2 className="sidebar__skills-title title">
-          {state ? "Skills" : "Umiejętności"}
+          {state ? " Hard Skills" : "Umiejętności Twarde"}
         </h2>
         <ul className="sidebar__skills-list list">
           <li className="sidebar__skills-list-element">HTML5</li>
@@ -74,6 +83,38 @@ const Sidebar = (props) => {
           </li>
           <li className="sidebar__skills-list-element">
             {state ? "Polish (Native)" : "Polski (Ojczysty)"}
+          </li>
+        </ul>
+      </div>
+
+      <div className="sidebar__skills sidebar-div">
+        <h2 className="sidebar__skills-title title">
+          {state ? " Soft Skills" : "Umiejętności Miękkie"}
+        </h2>
+        <ul className="sidebar__skills-list list">
+          <li className="sidebar__skills-list-element">
+            {state ? "Communication" : "Komunikacja"}
+          </li>
+          <li className="sidebar__skills-list-element">
+            {state ? "Teamwork" : "Praca zespołowa"}
+          </li>
+          <li className="sidebar__skills-list-element">
+            {state ? "Problem-solving" : "Rozwiązywanie problemów"}
+          </li>
+          <li className="sidebar__skills-list-element">
+            {state ? "Organizational" : "Zorganizowany"}
+          </li>
+          <li className="sidebar__skills-list-element">
+            {state ? "Critical thinking" : "Umiejętność krytycznego myślenia"}
+          </li>
+          <li className="sidebar__skills-list-element">
+            {state ? "Adaptability" : "Zdolność adaptacji"}
+          </li>
+          <li className="sidebar__skills-list-element">
+            {state ? "Openness to criticism" : "Otwartość na krytykę"}
+          </li>
+          <li className="sidebar__skills-list-element">
+            {state ? "Creativity" : "Kreatywność"}
           </li>
         </ul>
       </div>
