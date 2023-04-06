@@ -37,6 +37,72 @@ const Content = (props) => {
         </ol>
       </div>
 
+      <div className="content__projects content-div">
+        <h2 className="content__projects-title title">
+          {state ? "Courses" : "Kursy"}
+        </h2>
+        <ol className="content__projects-list list">
+          <li className="content__projects-list-element">
+            {state
+              ? "React from scratch by Samuraj Programowania: "
+              : "React od podstaw od Samuraj Programowania: "}
+            <a href="https://www.udemy.com/course/kurs-react-od-podstaw/">
+              {state ? "link" : "link"}
+            </a>
+          </li>
+
+          <li className="content__projects-list-element">
+            {state
+              ? "Introduction to Git and GitHub by Samuraj Programowania: "
+              : "Wprowadzenie do Git i GitHub od Samuraj Programowania: "}
+            <a href="https://www.udemy.com/course/kurs-git-i-github-od-podstaw/">
+              {state ? "link" : "link"}
+            </a>
+          </li>
+
+          <li className="content__projects-list-element">
+            {state
+              ? "Advanced Projects in CSS and JavaScript by Samuraj Programowania: "
+              : "Zaawansowane Projekty w CSS i JavaScript od Samuraj Programowania: "}
+            <a href="https://www.udemy.com/course/zaawansowane-projekty-w-css-i-javascript/">
+              {state ? "link" : "link"}
+            </a>
+          </li>
+
+          <li className="content__projects-list-element">
+            {state
+              ? "Programming in JavaScript by Samuraj Programowania: "
+              : "Programowanie w JavaScript od Samuraj Programowania: "}
+            <a href="https://www.udemy.com/course/kurs-programowanie-w-javascript/">
+              {state ? "link" : "link"}
+            </a>
+          </li>
+
+          <li className="content__projects-list-element">
+            {state
+              ? "Front-End Intermediate in 15 days by Samuraj Programowania: "
+              : "Front-End Średniozaawansowany w 15 dni  od Samuraj Programowania: "}
+            <a href="https://websamuraj.pl/">{state ? "link" : "link"}</a>
+          </li>
+
+          <li className="content__projects-list-element">
+            {state
+              ? "Web Developer from scratch in 15 days by Samuraj Programowania: "
+              : "Web Developer od podstaw w 15 dni od Samuraj Programowania: "}
+            <a href="https://websamuraj.pl/">{state ? "link" : "link"}</a>
+          </li>
+
+          <li className="content__projects-list-element">
+            {state
+              ? " WordPress course by Dariusz Pichalski: "
+              : "Kurs Word Press od Dariusz Pichalski: "}
+            <a href="https://www.udemy.com/course/kurs-wordpress-woocommerce-z-certyfikatem/">
+              {state ? "link" : "link"}
+            </a>
+          </li>
+        </ol>
+      </div>
+
       <div className="content__work-exp content-div">
         <h2 className="content__work-exp-title title">
           {state ? "Work Experience" : "Doświadczenie zawodowe"}
