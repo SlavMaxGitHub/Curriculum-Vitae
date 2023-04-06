@@ -20,17 +20,25 @@ const Content = (props) => {
         <ol className="content__projects-list list">
           <li className="content__projects-list-element">
             {state
-              ? "Portfolio with HTML/CSS/JS :"
-              : "Portfolio zbudowane w HTML/CSS/JS :"}
-            <a href="https://robionezpasja.netlify.app/">
+              ? "Portfolio with HTML/CSS/JS/React according to customer's design :"
+              : "Portfolio zbudowane w HTML/CSS/JS/React według projektu klienta :"}
+            <a
+              href="https://robionezpasja.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {state ? "link" : "link"}
             </a>
           </li>
           <li className="content__projects-list-element">
             {state
-              ? "Event site with Wordpress :"
-              : "Strona wydarzenia zbudowana w Wordpress :"}
-            <a href="https://jarmarksredniowieczny.pl/">
+              ? "Website of a cultural event organized by reenactors. Built using Wordpress :"
+              : "Strona wydarzenia kulturalnego, organizowanego przez rekonstruktorów. Zbudowana przy użyciu Wordpress :"}
+            <a
+              href="https://jarmarksredniowieczny.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {state ? "link" : "link"}
             </a>
           </li>
@@ -46,7 +54,11 @@ const Content = (props) => {
             {state
               ? "React from scratch by Samuraj Programowania: "
               : "React od podstaw od Samuraj Programowania: "}
-            <a href="https://www.udemy.com/course/kurs-react-od-podstaw/">
+            <a
+              href="https://www.udemy.com/course/kurs-react-od-podstaw/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {state ? "link" : "link"}
             </a>
           </li>
@@ -55,7 +67,11 @@ const Content = (props) => {
             {state
               ? "Introduction to Git and GitHub by Samuraj Programowania: "
               : "Wprowadzenie do Git i GitHub od Samuraj Programowania: "}
-            <a href="https://www.udemy.com/course/kurs-git-i-github-od-podstaw/">
+            <a
+              href="https://www.udemy.com/course/kurs-git-i-github-od-podstaw/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {state ? "link" : "link"}
             </a>
           </li>
@@ -64,7 +80,11 @@ const Content = (props) => {
             {state
               ? "Advanced Projects in CSS and JavaScript by Samuraj Programowania: "
               : "Zaawansowane Projekty w CSS i JavaScript od Samuraj Programowania: "}
-            <a href="https://www.udemy.com/course/zaawansowane-projekty-w-css-i-javascript/">
+            <a
+              href="https://www.udemy.com/course/zaawansowane-projekty-w-css-i-javascript/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {state ? "link" : "link"}
             </a>
           </li>
@@ -73,7 +93,11 @@ const Content = (props) => {
             {state
               ? "Programming in JavaScript by Samuraj Programowania: "
               : "Programowanie w JavaScript od Samuraj Programowania: "}
-            <a href="https://www.udemy.com/course/kurs-programowanie-w-javascript/">
+            <a
+              href="https://www.udemy.com/course/kurs-programowanie-w-javascript/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {state ? "link" : "link"}
             </a>
           </li>
@@ -82,21 +106,37 @@ const Content = (props) => {
             {state
               ? "Front-End Intermediate in 15 days by Samuraj Programowania: "
               : "Front-End Średniozaawansowany w 15 dni  od Samuraj Programowania: "}
-            <a href="https://websamuraj.pl/">{state ? "link" : "link"}</a>
+            <a
+              href="https://websamuraj.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {state ? "link" : "link"}
+            </a>
           </li>
 
           <li className="content__projects-list-element">
             {state
               ? "Web Developer from scratch in 15 days by Samuraj Programowania: "
               : "Web Developer od podstaw w 15 dni od Samuraj Programowania: "}
-            <a href="https://websamuraj.pl/">{state ? "link" : "link"}</a>
+            <a
+              href="https://websamuraj.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {state ? "link" : "link"}
+            </a>
           </li>
 
           <li className="content__projects-list-element">
             {state
               ? " WordPress course by Dariusz Pichalski: "
               : "Kurs Word Press od Dariusz Pichalski: "}
-            <a href="https://www.udemy.com/course/kurs-wordpress-woocommerce-z-certyfikatem/">
+            <a
+              href="https://www.udemy.com/course/kurs-wordpress-woocommerce-z-certyfikatem/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {state ? "link" : "link"}
             </a>
           </li>
@@ -109,7 +149,12 @@ const Content = (props) => {
         </h2>
         <div className="content__work-exp__aksa">
           <h3 className="content__work-exp__aksa-title">
-            <a className="content__work-exp__aksa-link" href="http://aksa.pl/">
+            <a
+              className="content__work-exp__aksa-link"
+              href="http://aksa.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               - Aksa Sp. z o.o.
             </a>
           </h3>
@@ -131,6 +176,8 @@ const Content = (props) => {
             <a
               className="content__education__school-link"
               href="https://www.kasprowiczanie.com/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               - I LO im. Jana Kasprowicza
             </a>
