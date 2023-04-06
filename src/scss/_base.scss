@@ -95,7 +95,20 @@ body {
     }
   }
 }
-
+@media screen and (max-width: map-get($breakpoints, md-large)) {
+  body {
+    font-size: 150%;
+  }
+  .sidebar__logo {
+    scale: 1.5;
+  }
+  .pdfBtn {
+    font-size: 18px;
+  }
+  .content__projects-list-element {
+    margin-bottom: 80px;
+  }
+}
 @media screen and (max-width: map-get($breakpoints, medium)) {
   .wrapper {
     width: 100%;
@@ -107,12 +120,5 @@ body {
       position: static;
       align-items: center;
     }
-  }
-}
-
-@media screen and (max-width: map-get($breakpoints, small)) {
-  .sidebar__image {
-    width: 80%;
-    align-items: center;
   }
 }

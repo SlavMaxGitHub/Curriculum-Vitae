@@ -23,7 +23,7 @@ const Sidebar = (props) => {
             </a>
           </li>
           <li className="sidebar__contacts-list-element">
-            e-mail:
+            mail:
             <a
               className="sidebar__contacts-list-element-link link"
               href="mailto:cinek1454@wp.pl"
