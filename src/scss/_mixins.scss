@@ -1,0 +1,45 @@
+@mixin div-position {
+  margin: 40px 80px;
+  width: 50%;
+}
+@mixin sidebar-div-position {
+  margin: 50px;
+}
+
+@mixin h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+@mixin exp-info {
+  color: var(--grayColor);
+  text-indent: 10px;
+  span {
+    font-size: 14px;
+  }
+}
+
+@mixin sidebar-lists {
+  ul {
+    margin-left: 15px;
+    color: var(--lightColor);
+    text-align: left;
+  }
+  ul li {
+    line-height: 200%;
+    @media screen and (max-width: map-get($breakpoints, md-large)) {
+      list-style: none;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+}
+
+// @mixin multiline {
+//   -webkit-box-orient: vertical;
+//   display: -webkit-box;
+//   -webkit-line-clamp: 5;
+//   overflow: hidden;
+//   text-overflow: ellipsis " [..]";
+//   white-space: normal;
+// }

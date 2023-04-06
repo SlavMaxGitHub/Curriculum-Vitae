@@ -37,7 +37,9 @@
   },
   "devDependencies": {
     "bem-css-modules": "^1.4.3",
+    "css-loader": "^6.7.3",
     "react-router-dom": "^6.10.0",
-    "sass": "^1.60.0"
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.2"
   }
 }

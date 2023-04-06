@@ -1,0 +1,41 @@
+.langBtn {
+  position: fixed;
+  top: 3%;
+  right: 2%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-style: none;
+  background-image: url(../../public/assets/plengg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 0 20px var(--darkColor);
+  &:hover {
+    cursor: pointer;
+    animation: bounce 0.7s ease;
+  }
+  @keyframes bounce {
+    0% {
+    }
+    20% {
+      scale: 0.8;
+    }
+    40% {
+      scale: 0.6;
+    }
+    50% {
+      scale: 0.8;
+    }
+    60% {
+      scale: 1;
+    }
+    80% {
+      scale: 1.2;
+    }
+    100% {
+      scale: 1;
+      rotate: 360deg;
+    }
+  }
+}

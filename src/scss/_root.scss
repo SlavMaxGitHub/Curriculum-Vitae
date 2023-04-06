@@ -1,0 +1,12 @@
+:root {
+  --darkColor: #1e2939;
+  --lightColor: #f5f7fa;
+  --grayColor: #808080;
+}
+
+$breakpoints: (
+  large: 1420px,
+  md-large: 1200px,
+  medium: 920px,
+  small: 480px
+);

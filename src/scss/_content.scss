@@ -1,0 +1,57 @@
+.content {
+  flex-basis: 66%;
+  display: flex;
+  flex-direction: column;
+
+  .content__about {
+    margin-top: 80px;
+    .content__about-name {
+      font-size: 40px;
+    }
+    .content__about-text {
+      margin-top: 20px;
+      color: var(--grayColor);
+      line-height: 125%;
+    }
+  }
+
+  .content__projects-list {
+    margin-left: 20px;
+    color: var(--grayColor);
+  }
+  .content__projects-list-element {
+    text-indent: 10px;
+    line-height: 150%;
+  }
+  .content__work-exp__aksa-title {
+    margin-bottom: 10px;
+    .content__work-exp__aksa-link {
+      color: var(--darkColor);
+    }
+  }
+  .content__work-exp__aksa-info {
+    @include exp-info;
+  }
+
+  .content__education {
+    margin-bottom: 160px;
+    .content__education__school-title {
+      margin-bottom: 10px;
+      .content__education__school-link {
+        color: var(--darkColor);
+      }
+    }
+    .content__education__school-info {
+      @include exp-info;
+    }
+  }
+  .data-processing {
+    width: 80%;
+    margin: 180px auto 20px;
+    .rodo {
+      color: var(--grayColor);
+      font-size: 12px;
+      line-height: 120%;
+    }
+  }
+}
