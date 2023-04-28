@@ -20,8 +20,8 @@ const Content = (props) => {
         <ol className="content__projects-list list">
           <li className="content__projects-list-element">
             {state
-              ? "Portfolio with HTML/CSS/JS/React according to customer's design :"
-              : "Portfolio zbudowane w HTML/CSS/JS/React według projektu klienta :"}
+              ? "Portfolio with HTML/CSS/JS/React according to customer's design: "
+              : "Portfolio zbudowane w HTML/CSS/JS/React według projektu klienta: "}
             <a
               href="https://robionezpasja.netlify.app/"
               target="_blank"
@@ -32,8 +32,20 @@ const Content = (props) => {
           </li>
           <li className="content__projects-list-element">
             {state
-              ? "Website of a cultural event organized by reenactors. Built using Wordpress :"
-              : "Strona wydarzenia kulturalnego, organizowanego przez rekonstruktorów. Zbudowana przy użyciu Wordpress :"}
+              ? "Martial arts academy website. Built using Wordpress: "
+              : "Strona internetowa akademii sztuk walki. Zbudowana w Wordpress :"}
+            <a
+              href="https://akademiaperun.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {state ? "link" : "link"}
+            </a>
+          </li>
+          <li className="content__projects-list-element">
+            {state
+              ? "Website of a cultural event organized by reenactors. Built using Wordpress: "
+              : "Strona wydarzenia kulturalnego, organizowanego przez rekonstruktorów. Zbudowana przy użyciu Wordpress: "}
             <a
               href="https://jarmarksredniowieczny.pl/"
               target="_blank"
