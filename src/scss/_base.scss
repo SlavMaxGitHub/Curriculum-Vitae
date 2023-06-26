@@ -68,6 +68,10 @@ body {
       padding-right: 10%;
       text-align: center;
 
+      &__logo {
+        margin-top: 80px;
+      }
+
       &-div {
         display: flex;
         flex-direction: column;

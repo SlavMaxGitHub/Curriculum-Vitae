@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-const ModifiedDate = () => {
+const ModifiedDate = (props) => {
+  let state = props.value;
   const [daysPassed, setDaysPassed] = useState(0);
 
   useEffect(() => {
@@ -19,8 +20,9 @@ const ModifiedDate = () => {
   return (
     <div className="modified-date">
       <p>
-        Ostatnia aktualizacja: <span>26.06.2023</span>
-        {`${daysPassed} dni temu`}
+        {state ? "Last updated: " : "Ostatnia aktualizacja: "}
+        <span>26.06.2023</span>
+        {daysPassed} {state ? "days ago " : "dni temu "}
       </p>
     </div>
   );

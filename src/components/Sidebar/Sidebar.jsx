@@ -8,7 +8,8 @@ const Sidebar = (props) => {
 
   return (
     <section className="sidebar">
-      <ModifiedDate />
+      <ModifiedDate value={state} />
+
       <Logo />
 
       <div className="sidebar__contacts sidebar-div">
