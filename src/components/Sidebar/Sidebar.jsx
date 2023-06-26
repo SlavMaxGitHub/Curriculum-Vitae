@@ -1,11 +1,14 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import Logo from "./Logo/Logo";
+import ModifiedDate from "./ModifiedDate";
 
 const Sidebar = (props) => {
   let state = props.value;
+
   return (
     <section className="sidebar">
+      <ModifiedDate />
       <Logo />
 
       <div className="sidebar__contacts sidebar-div">

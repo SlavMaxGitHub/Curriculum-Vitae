@@ -1,0 +1,10 @@
+.modified-date {
+  position: absolute;
+  & p {
+    color: var(--grayColor);
+    font-size: 12px;
+    & span {
+      display: none;
+    }
+  }
+}
