@@ -175,6 +175,25 @@ const Content = (props) => {
           <h3 className="content__work-exp__aksa-title">
             <a
               className="content__work-exp__aksa-link"
+              href="https://coolbrand.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              - Coolbrand.
+            </a>
+          </h3>
+          <p className="content__work-exp__aksa-info">
+            {state ? "Junior Web Developer /" : "Junior Web Developer /"}
+            <span className="content__work-exp__aksa-date">
+              {state ? "May 2023 - up to now" : "Maj 2023 - obecnie"}
+            </span>
+          </p>
+        </div>
+
+        <div className="content__work-exp__aksa">
+          <h3 className="content__work-exp__aksa-title">
+            <a
+              className="content__work-exp__aksa-link"
               href="http://aksa.pl/"
               target="_blank"
               rel="noopener noreferrer"
