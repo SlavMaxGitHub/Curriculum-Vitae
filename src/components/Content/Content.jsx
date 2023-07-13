@@ -20,6 +20,18 @@ const Content = (props) => {
         <ol className="content__projects-list list">
           <li className="content__projects-list-element">
             {state
+              ? "'Team of experts' subpage written in HTML/CSS/JS and implemented to an existing website in Wordpress: "
+              : "Podstrona 'Zespół ekspertów' napisana w HTML/CSS/JS i wdrożona do istniejącej strony w Wordpressie: "}
+            <a
+              href="https://wmh.agency/zespol-ekspertow/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {state ? "link" : "link"}
+            </a>
+          </li>
+          <li className="content__projects-list-element">
+            {state
               ? "Portfolio with HTML/CSS/JS/React according to customer's design: "
               : "Portfolio zbudowane w HTML/CSS/JS/React według projektu klienta: "}
             <a
