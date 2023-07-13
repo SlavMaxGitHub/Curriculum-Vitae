@@ -8,8 +8,8 @@ const Content = (props) => {
         <h1 className="content__about-name">Marcin Gizka</h1>
         <p className="content__about-text">
           {props.value
-            ? "I currently work in the commercial industry, but my interests focus on IT. I am constantly developing my Front-End skills with new issues and topics. Learning to program gives me joy and satisfaction. I am a quick learner and I am looking for a job where I can develop and gain experience to turn them into the best results."
-            : "Obecnie pracuję w branży handlowej, ale moje zainteresowania koncentrują się na IT i programowaniu. Stale rozwijam swoje umiejętności Front-Endowe o nowe zagadnienia i tematy. Nauka programowania sprawia mi radość i satysfakcję. Szybko się uczę i szukam pracy, pozwalającej na rozwój i zdobywanie nowych doświadczeń, które to będę mógł przekuwać na lepsze wyniki w pracy."}
+            ? "Currently, I am working in the sales industry, but concurrently, I am engaged as a Junior Web Developer. My interests My interests focus on IT and programming, particularly in Front-End development. I actively expand my knowledge of new technologies and tools to create visually appealing and responsive websites. I am ambitious, a fast learner, and actively seeking a position that allows for professional growth and acquiring new experiences in the programming domain."
+            : "Obecnie pracuję w branży handlowej, jednak równolegle angażuję się jako Junior Web Developer. Moje zainteresowania skupiają się na dziedzinie IT i programowaniu, szczególnie w obszarze Front-Endu. Aktywnie poszerzam swoją wiedzę o nowe technologie i narzędzia, aby tworzyć estetyczne i responsywne strony internetowe. Jestem ambitny, szybko się uczę i poszukuję stanowiska, które umożliwi mi rozwój zawodowy oraz zdobywanie nowych doświadczeń w obszarze programowania."}
         </p>
       </div>
 
