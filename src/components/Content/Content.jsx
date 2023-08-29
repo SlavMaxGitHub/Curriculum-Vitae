@@ -8,8 +8,8 @@ const Content = (props) => {
         <h1 className="content__about-name">Marcin Gizka</h1>
         <p className="content__about-text">
           {props.value
-            ? "Currently, I am working in the sales industry, but concurrently, I am engaged as a Junior Web Developer. My interests My interests focus on IT and programming, particularly in Front-End development. I actively expand my knowledge of new technologies and tools to create visually appealing and responsive websites. I am ambitious, a fast learner, and actively seeking a position that allows for professional growth and acquiring new experiences in the programming domain."
-            : "Obecnie pracuję w branży handlowej, jednak równolegle angażuję się jako Junior Web Developer. Moje zainteresowania skupiają się na dziedzinie IT i programowaniu, szczególnie w obszarze Front-Endu. Aktywnie poszerzam swoją wiedzę o nowe technologie i narzędzia, aby tworzyć estetyczne i responsywne strony internetowe. Jestem ambitny, szybko się uczę i poszukuję stanowiska, które umożliwi mi rozwój zawodowy oraz zdobywanie nowych doświadczeń w obszarze programowania."}
+            ? "Currently, I am working in the sales industry, but concurrently, I am engaged as a Junior Wordpress Developer. My interests My interests focus on IT and programming, particularly in Front-End development. I actively expand my knowledge of new technologies and tools to create visually appealing and responsive websites. I am ambitious, a fast learner, and actively seeking a position that allows for professional growth and acquiring new experiences in the programming domain."
+            : "Obecnie pracuję w branży handlowej, jednak równolegle angażuję się jako Junior Wordpress Developer. Moje zainteresowania skupiają się na dziedzinie IT i programowaniu, szczególnie w obszarze Front-Endu. Aktywnie poszerzam swoją wiedzę o nowe technologie i narzędzia, aby tworzyć estetyczne i responsywne strony internetowe. Jestem ambitny, szybko się uczę i poszukuję stanowiska, które umożliwi mi rozwój zawodowy oraz zdobywanie nowych doświadczeń w obszarze programowania."}
         </p>
       </div>
 
@@ -18,6 +18,19 @@ const Content = (props) => {
           {state ? "My Projects" : "Moje Projekty"}
         </h2>
         <ol className="content__projects-list list">
+          <li className="content__projects-list-element">
+            {state
+              ? "Landingpage built in HTML/CSS/JS/PHP code and implemented in Wordpress: "
+              : "Landingpage zbudowany w kodzie HTML/CSS/JS/PHP i wdrożony do Wordpressa: "}
+            <a
+              href="http://au.mokosz.eu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {state ? "link" : "link"}
+            </a>
+          </li>
+
           <li className="content__projects-list-element">
             {state
               ? "'Team of experts' subpage written in HTML/CSS/JS and implemented to an existing website in Wordpress: "
@@ -183,7 +196,9 @@ const Content = (props) => {
             </a>
           </h3>
           <p className="content__work-exp__aksa-info">
-            {state ? "Junior Web Developer /" : "Junior Web Developer /"}
+            {state
+              ? "Junior Wordpress Developer /"
+              : "Junior Wordpress Developer /"}
             <span className="content__work-exp__aksa-date">
               {state ? "May 2023 - up to now" : "Maj 2023 - obecnie"}
             </span>
