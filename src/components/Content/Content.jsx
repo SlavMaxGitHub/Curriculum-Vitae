@@ -1,7 +1,61 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Content = (props) => {
   const state = props.value;
+  useEffect(() => {
+    const script = () => {
+      const showMoreButton1 = document.getElementById("showMore1");
+      const listElements1 = document.querySelectorAll(".proj-li");
+      let isExpanded1 = false;
+
+      showMoreButton1.addEventListener("click", () => {
+        if (!isExpanded1) {
+          listElements1.forEach((element, index) => {
+            if (index >= 5) {
+              element.style.display = "list-item";
+            }
+          });
+          showMoreButton1.textContent = state ? "Hide" : "Zwiń";
+        } else {
+          listElements1.forEach((element, index) => {
+            if (index >= 5) {
+              element.style.display = "none";
+            }
+          });
+          showMoreButton1.textContent = state
+            ? "See more..."
+            : "Zobacz więcej...";
+        }
+        isExpanded1 = !isExpanded1;
+      });
+
+      const showMoreButton2 = document.getElementById("showMore2");
+      const listElements2 = document.querySelectorAll(".cours-li");
+      let isExpanded2 = false;
+
+      showMoreButton2.addEventListener("click", () => {
+        if (!isExpanded2) {
+          listElements2.forEach((element, index) => {
+            if (index >= 5) {
+              element.style.display = "list-item";
+            }
+          });
+          showMoreButton2.textContent = state ? "Hide" : "Zwiń";
+        } else {
+          listElements2.forEach((element, index) => {
+            if (index >= 5) {
+              element.style.display = "none";
+            }
+          });
+          showMoreButton2.textContent = state
+            ? "See more..."
+            : "Zobacz więcej...";
+        }
+        isExpanded2 = !isExpanded2;
+      });
+    };
+    script();
+  }, [state]);
   return (
     <section className="content">
       <div className="content__about content-div">
@@ -13,12 +67,24 @@ const Content = (props) => {
         </p>
       </div>
 
-      <div className="content__projects content-div">
+      <div className="content__projects content-div ">
         <h2 className="content__projects-title title">
           {state ? "My Projects" : "Moje Projekty"}
         </h2>
         <ol className="content__projects-list list">
-          <li className="content__projects-list-element">
+          <li className="content__projects-list-element proj-li">
+            {state
+              ? "Website built in HTML/CSS/JS/PHP code and implemented in Wordpress: "
+              : "Strona internetowa zbudowana w kodzie HTML/CSS/JS/PHP i wdrożona do Wordpressa: "}
+            <a
+              href="https://atobos.jbeghnzeab.cfolks.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {state ? "link" : "link"}
+            </a>
+          </li>
+          <li className="content__projects-list-element proj-li">
             {state
               ? "Landingpage built in HTML/CSS/JS/PHP code and implemented in Wordpress: "
               : "Landingpage zbudowany w kodzie HTML/CSS/JS/PHP i wdrożony do Wordpressa: "}
@@ -31,7 +97,7 @@ const Content = (props) => {
             </a>
           </li>
 
-          <li className="content__projects-list-element">
+          <li className="content__projects-list-element proj-li">
             {state
               ? "'Team of experts' subpage written in HTML/CSS/JS and implemented to an existing website in Wordpress: "
               : "Podstrona 'Zespół ekspertów' napisana w HTML/CSS/JS i wdrożona do istniejącej strony w Wordpressie: "}
@@ -43,7 +109,7 @@ const Content = (props) => {
               {state ? "link" : "link"}
             </a>
           </li>
-          <li className="content__projects-list-element">
+          <li className="content__projects-list-element proj-li">
             {state
               ? "Portfolio with HTML/CSS/JS/React according to customer's design: "
               : "Portfolio zbudowane w HTML/CSS/JS/React według projektu klienta: "}
@@ -55,7 +121,7 @@ const Content = (props) => {
               {state ? "link" : "link"}
             </a>
           </li>
-          <li className="content__projects-list-element">
+          <li className="content__projects-list-element proj-li">
             {state
               ? "Martial arts academy website. Built using Wordpress: "
               : "Strona internetowa akademii sztuk walki. Zbudowana w Wordpress :"}
@@ -67,7 +133,7 @@ const Content = (props) => {
               {state ? "link" : "link"}
             </a>
           </li>
-          <li className="content__projects-list-element">
+          <li className="content__projects-list-element proj-li">
             {state
               ? "Website of a cultural event organized by reenactors. Built using Wordpress: "
               : "Strona wydarzenia kulturalnego, organizowanego przez rekonstruktorów. Zbudowana przy użyciu Wordpress: "}
@@ -80,6 +146,9 @@ const Content = (props) => {
             </a>
           </li>
         </ol>
+        <button id="showMore1">
+          {state ? " See more... " : "Zobacz więcej..."}
+        </button>
       </div>
 
       <div className="content__projects content-div">
@@ -87,7 +156,7 @@ const Content = (props) => {
           {state ? "Courses" : "Kursy"}
         </h2>
         <ol className="content__projects-list list">
-          <li className="content__projects-list-element">
+          <li className="content__projects-list-element cours-li">
             {state
               ? "React from scratch by Samuraj Programowania: "
               : "React od podstaw od Samuraj Programowania: "}
@@ -100,7 +169,7 @@ const Content = (props) => {
             </a>
           </li>
 
-          <li className="content__projects-list-element">
+          <li className="content__projects-list-element cours-li">
             {state
               ? "Introduction to Git and GitHub by Samuraj Programowania: "
               : "Wprowadzenie do Git i GitHub od Samuraj Programowania: "}
@@ -113,7 +182,7 @@ const Content = (props) => {
             </a>
           </li>
 
-          <li className="content__projects-list-element">
+          <li className="content__projects-list-element cours-li">
             {state
               ? "Advanced Projects in CSS and JavaScript by Samuraj Programowania: "
               : "Zaawansowane Projekty w CSS i JavaScript od Samuraj Programowania: "}
@@ -126,7 +195,7 @@ const Content = (props) => {
             </a>
           </li>
 
-          <li className="content__projects-list-element">
+          <li className="content__projects-list-element cours-li">
             {state
               ? "Programming in JavaScript by Samuraj Programowania: "
               : "Programowanie w JavaScript od Samuraj Programowania: "}
@@ -139,7 +208,7 @@ const Content = (props) => {
             </a>
           </li>
 
-          <li className="content__projects-list-element">
+          <li className="content__projects-list-element cours-li">
             {state
               ? "Front-End Intermediate in 15 days by Samuraj Programowania: "
               : "Front-End Średniozaawansowany w 15 dni  od Samuraj Programowania: "}
@@ -152,7 +221,7 @@ const Content = (props) => {
             </a>
           </li>
 
-          <li className="content__projects-list-element">
+          <li className="content__projects-list-element cours-li">
             {state
               ? "Web Developer from scratch in 15 days by Samuraj Programowania: "
               : "Web Developer od podstaw w 15 dni od Samuraj Programowania: "}
@@ -165,7 +234,7 @@ const Content = (props) => {
             </a>
           </li>
 
-          <li className="content__projects-list-element">
+          <li className="content__projects-list-element cours-li">
             {state
               ? " WordPress course by Dariusz Pichalski: "
               : "Kurs Word Press od Dariusz Pichalski: "}
@@ -178,6 +247,9 @@ const Content = (props) => {
             </a>
           </li>
         </ol>
+        <button id="showMore2">
+          {state ? " See more... " : "Zobacz więcej..."}
+        </button>
       </div>
 
       <div className="content__work-exp content-div">

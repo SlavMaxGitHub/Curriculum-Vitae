@@ -2,12 +2,12 @@ import React, { useState } from "react";
 
 import Content from "./components/Content/Content";
 import Sidebar from "./components/Sidebar/Sidebar";
+// import script from "./components/script";
 
 import "./scss/style.scss";
 
 function App() {
   const [state, setState] = useState(false);
-
   const handleOnClick = () => {
     setState(!state);
   };

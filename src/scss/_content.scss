@@ -14,7 +14,26 @@
       line-height: 125%;
     }
   }
-
+  #showMore1,
+  #showMore2 {
+    width: fit-content;
+    text-decoration: none;
+    color: var(--darkColor);
+    background-color: var(--lightColor);
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-weight: 600;
+    border: 1px solid var(--grayColor);
+    border-radius: 20px;
+    transition: 0.5s;
+    letter-spacing: 0.5px;
+    &:hover {
+      background-color: royalblue;
+      cursor: pointer;
+      color: var(--lightColor);
+    }
+  }
   .content__projects-list {
     margin-left: 20px;
     color: var(--grayColor);
@@ -23,6 +42,14 @@
     text-indent: 10px;
     line-height: 150%;
   }
+
+  .proj-li,
+  .cours-li {
+    &:nth-child(n + 6) {
+      display: none;
+    }
+  }
+
   .content__work-exp__aksa-title {
     margin-bottom: 10px;
     .content__work-exp__aksa-link {
