@@ -62,8 +62,8 @@ const Content = (props) => {
         <h1 className="content__about-name">Marcin Gizka</h1>
         <p className="content__about-text">
           {props.value
-            ? "Currently, I am working in the sales industry, but concurrently, I am engaged as a Junior Wordpress Developer. My interests My interests focus on IT and programming, particularly in Front-End development. I actively expand my knowledge of new technologies and tools to create visually appealing and responsive websites. I am ambitious, a fast learner, and actively seeking a position that allows for professional growth and acquiring new experiences in the programming domain."
-            : "Obecnie pracuję w branży handlowej, jednak równolegle angażuję się jako Junior Wordpress Developer. Moje zainteresowania skupiają się na dziedzinie IT i programowaniu, szczególnie w obszarze Front-Endu. Aktywnie poszerzam swoją wiedzę o nowe technologie i narzędzia, aby tworzyć estetyczne i responsywne strony internetowe. Jestem ambitny, szybko się uczę i poszukuję stanowiska, które umożliwi mi rozwój zawodowy oraz zdobywanie nowych doświadczeń w obszarze programowania."}
+            ? "Currently, I am working as a Sales Specialist and am advancing my career as a Junior WordPress Developer. I am fascinated by creating aesthetically pleasing and functional websites. Being a fast learner, I constantly improve my skills to deliver the best solutions. Creativity and dedication are my strengths, which I prioritize to craft innovative projects and achieve professional successes."
+            : "Aktualnie pracuję na stanowisku specjalista ds. sprzedaży oraz rozwijam swoją karierę jako Junior WordPress Developer. Fascynuje mnie tworzenie estetycznych i funkcjonalnych stron internetowych. Jako osoba o szybkim przyswajaniu wiedzy, nieustannie doskonalę swoje umiejętności, aby dostarczać najlepsze rozwiązania. Kreatywność i zaangażowanie to moje atuty, które stawiam na pierwszym miejscu, aby tworzyć innowacyjne projekty i osiągać sukcesy zawodowe."}
         </p>
       </div>
 

@@ -60,7 +60,7 @@ const Sidebar = (props) => {
         </ul>
         {state ? (
           <a
-            href="https://drive.google.com/file/d/1U-xfqpl1fFmH9z7wMFlHcazgPhBcnm_W/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Qxvr0HgtGIqFNsKTlXn5vszrffQlUZzI/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="pdfBtn"
@@ -69,7 +69,7 @@ const Sidebar = (props) => {
           </a>
         ) : (
           <a
-            href="https://drive.google.com/file/d/1DL5iOQ05xCFgi87Dxf0ChBaitQtgjDY5/view?usp=sharing"
+            href="https://drive.google.com/file/d/1zwt4zLITc_qtqbaY9hs6fNOBAowEC3ew/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="pdfBtn"
