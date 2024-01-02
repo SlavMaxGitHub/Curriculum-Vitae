@@ -57,10 +57,21 @@ const Sidebar = (props) => {
               {state ? "link" : "link"}
             </a>
           </li>
+          <li className="sidebar__contacts-list-element">
+            Linkedin:
+            <a
+              className="sidebar__contacts-list-element-link link"
+              href="https://www.linkedin.com/in/marcin-gizka-17630a29a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {state ? "link" : "link"}
+            </a>
+          </li>
         </ul>
         {state ? (
           <a
-            href="https://drive.google.com/file/d/1Qxvr0HgtGIqFNsKTlXn5vszrffQlUZzI/view?usp=sharing"
+            href="https://drive.google.com/file/d/1zhhX8aFE5nxn6a3xfMdRQjAaIpKX6EJn/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="pdfBtn"
@@ -69,7 +80,7 @@ const Sidebar = (props) => {
           </a>
         ) : (
           <a
-            href="https://drive.google.com/file/d/1zwt4zLITc_qtqbaY9hs6fNOBAowEC3ew/view?usp=sharing"
+            href="https://drive.google.com/file/d/1L0jLNpwvctbDrfWDaH_a59F-IWJZmBbb/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="pdfBtn"
@@ -86,16 +97,12 @@ const Sidebar = (props) => {
         <ul className="sidebar__skills-list list">
           <li className="sidebar__skills-list-element">HTML5</li>
           <li className="sidebar__skills-list-element">CSS3 / Sass&BEM</li>
+          <li className="sidebar__skills-list-element">PHP</li>
           <li className="sidebar__skills-list-element">JavaScript</li>
           <li className="sidebar__skills-list-element">GIT</li>
           <li className="sidebar__skills-list-element">React</li>
-          <li className="sidebar__skills-list-element">Bootstrap</li>
-          <li className="sidebar__skills-list-element">API</li>
-          <li className="sidebar__skills-list-element">NPM</li>
           <li className="sidebar__skills-list-element">Webpack4</li>
-          <li className="sidebar__skills-list-element">
-            Wordpress / Elementor
-          </li>
+          <li className="sidebar__skills-list-element">WordPress</li>
           <li className="sidebar__skills-list-element">
             {state ? "English: " : "Angielski: "} B1
           </li>

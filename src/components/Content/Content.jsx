@@ -74,8 +74,45 @@ const Content = (props) => {
         <ol className="content__projects-list list">
           <li className="content__projects-list-element proj-li">
             {state
-              ? "Website built in HTML/CSS/JS/PHP code and implemented in Wordpress: "
-              : "Strona internetowa zbudowana w kodzie HTML/CSS/JS/PHP i wdrożona do Wordpressa: "}
+              ? "Website built in HTML/CSS/JS/PHP code and implemented in Wordpress (January 2024): "
+              : "Strona internetowa zbudowana w kodzie HTML/CSS/JS/PHP i wdrożona do Wordpressa (Styczeń 2024): "}
+            <a
+              href="https://can-ram.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {state ? "link" : "link"}
+            </a>
+          </li>
+          <li className="content__projects-list-element proj-li">
+            {state
+              ? "Design, development and implementation of a website into WordPress (January 2024): "
+              : "Zaprojektowanie oraz wykonanie i wdrożenie do Wordpressa strony internetowej (Styczeń 2024): "}
+            <a
+              href="https://experttools.eu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {state ? "link" : "link"}
+            </a>
+          </li>
+          <li className="content__projects-list-element proj-li">
+            {state
+              ? "Website built in HTML/CSS/JS/PHP code and implemented in Wordpress (December 2023): "
+              : "Strona internetowa zbudowana w kodzie HTML/CSS/JS/PHP i wdrożona do Wordpressa (Grudzień 2023): "}
+            <a
+              href="https://hostessy-agencja.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {state ? "link" : "link"}
+            </a>
+          </li>
+
+          <li className="content__projects-list-element proj-li">
+            {state
+              ? "Website built in HTML/CSS/JS/PHP code and implemented in Wordpress (September 2023): "
+              : "Strona internetowa zbudowana w kodzie HTML/CSS/JS/PHP i wdrożona do Wordpressa (Wrzesień 2023): "}
             <a
               href="https://atobos.jbeghnzeab.cfolks.pl/"
               target="_blank"
@@ -86,8 +123,8 @@ const Content = (props) => {
           </li>
           <li className="content__projects-list-element proj-li">
             {state
-              ? "Landingpage built in HTML/CSS/JS/PHP code and implemented in Wordpress: "
-              : "Landingpage zbudowany w kodzie HTML/CSS/JS/PHP i wdrożony do Wordpressa: "}
+              ? "Landingpage built in HTML/CSS/JS/PHP code and implemented in Wordpress (June 2023): "
+              : "Landingpage zbudowany w kodzie HTML/CSS/JS/PHP i wdrożony do Wordpressa (Czerwiec 2023): "}
             <a
               href="http://au.mokosz.eu/"
               target="_blank"
@@ -99,8 +136,8 @@ const Content = (props) => {
 
           <li className="content__projects-list-element proj-li">
             {state
-              ? "'Team of experts' subpage written in HTML/CSS/JS and implemented to an existing website in Wordpress: "
-              : "Podstrona 'Zespół ekspertów' napisana w HTML/CSS/JS i wdrożona do istniejącej strony w Wordpressie: "}
+              ? "'Team of experts' subpage written in HTML/CSS/JS and implemented to an existing website in Wordpress (July 2023): "
+              : "Podstrona 'Zespół ekspertów' napisana w HTML/CSS/JS i wdrożona do istniejącej strony w Wordpressie (Lipiec 2023): "}
             <a
               href="https://wmh.agency/zespol-ekspertow/"
               target="_blank"
@@ -111,8 +148,8 @@ const Content = (props) => {
           </li>
           <li className="content__projects-list-element proj-li">
             {state
-              ? "Portfolio with HTML/CSS/JS/React according to customer's design: "
-              : "Portfolio zbudowane w HTML/CSS/JS/React według projektu klienta: "}
+              ? "Portfolio with HTML/CSS/JS/React according to customer's design (April 2023): "
+              : "Portfolio zbudowane w HTML/CSS/JS/React według projektu klienta (Kwiecień 2023): "}
             <a
               href="https://robionezpasja.netlify.app/"
               target="_blank"
@@ -123,8 +160,8 @@ const Content = (props) => {
           </li>
           <li className="content__projects-list-element proj-li">
             {state
-              ? "Martial arts academy website. Built using Wordpress: "
-              : "Strona internetowa akademii sztuk walki. Zbudowana w Wordpress :"}
+              ? "Martial arts academy website. Built using Wordpress (April 2023): "
+              : "Strona internetowa akademii sztuk walki. Zbudowana w Wordpress (Kwiecień 2023):"}
             <a
               href="https://akademiaperun.pl/"
               target="_blank"
@@ -135,8 +172,8 @@ const Content = (props) => {
           </li>
           <li className="content__projects-list-element proj-li">
             {state
-              ? "Website of a cultural event organized by reenactors. Built using Wordpress: "
-              : "Strona wydarzenia kulturalnego, organizowanego przez rekonstruktorów. Zbudowana przy użyciu Wordpress: "}
+              ? "Website of a cultural event organized by reenactors. Built using Wordpress (March 2023): "
+              : "Strona wydarzenia kulturalnego, organizowanego przez rekonstruktorów. Zbudowana przy użyciu Wordpress (Marzec 2023): "}
             <a
               href="https://jarmarksredniowieczny.pl/"
               target="_blank"

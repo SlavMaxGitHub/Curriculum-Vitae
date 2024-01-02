@@ -21,7 +21,7 @@ const ModifiedDate = (props) => {
     <div className="modified-date">
       <p>
         {state ? "Last updated: " : "Ostatnia aktualizacja: "}
-        <span>26.09.2023</span>
+        <span>02.01.2024</span>
         {daysPassed} {state ? "days ago " : "dni temu "}
       </p>
     </div>
