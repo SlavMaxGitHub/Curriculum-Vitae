@@ -74,6 +74,18 @@ const Content = (props) => {
         <ol className="content__projects-list list">
           <li className="content__projects-list-element proj-li">
             {state
+              ? "Website built in HTML/CSS/JS/PHP code and implemented in Wordpress (February 2024): "
+              : "Strona internetowa zbudowana w kodzie HTML/CSS/JS/PHP i wdrożona do Wordpressa (Luty 2024): "}
+            <a
+              href="https://lead-marketing.pl/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {state ? "link" : "link"}
+            </a>
+          </li>
+          <li className="content__projects-list-element proj-li">
+            {state
               ? "Website built in HTML/CSS/JS/PHP code and implemented in Wordpress (January 2024): "
               : "Strona internetowa zbudowana w kodzie HTML/CSS/JS/PHP i wdrożona do Wordpressa (Styczeń 2024): "}
             <a

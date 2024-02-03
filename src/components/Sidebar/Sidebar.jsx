@@ -100,9 +100,10 @@ const Sidebar = (props) => {
           <li className="sidebar__skills-list-element">PHP</li>
           <li className="sidebar__skills-list-element">JavaScript</li>
           <li className="sidebar__skills-list-element">GIT</li>
-          <li className="sidebar__skills-list-element">React</li>
           <li className="sidebar__skills-list-element">Webpack4</li>
           <li className="sidebar__skills-list-element">WordPress</li>
+          <li className="sidebar__skills-list-element">Photoshop</li>
+          <li className="sidebar__skills-list-element">MSOffice</li>
           <li className="sidebar__skills-list-element">
             {state ? "English: " : "Angielski: "} B1
           </li>
@@ -122,6 +123,9 @@ const Sidebar = (props) => {
           </li>
           <li className="sidebar__skills-list-element">
             {state ? "Teamwork" : "Praca zespołowa"}
+          </li>
+          <li className="sidebar__skills-list-element">
+            {state ? "Individual work" : "Praca indywidualna"}
           </li>
           <li className="sidebar__skills-list-element">
             {state ? "Problem-solving" : "Rozwiązywanie problemów"}
